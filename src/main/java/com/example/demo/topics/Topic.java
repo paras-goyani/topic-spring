@@ -2,14 +2,14 @@ package com.example.demo.topics;
 
 
 
-import org.springframework.data.mongodb.core.mapping.Document;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 
 @Entity
-@Document(collection = "topics")
+@Table(name = "topics")
 public class Topic {
 
     @Id
